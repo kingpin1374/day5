@@ -2,8 +2,9 @@ name: github action demo
 run-name: Testing our basic action
 
 on: [push]
+
 jobs: 
- basic_workflow: 
-  run-on: ubuntu-latest
-  steps:
-    - run: echo "job basic_workflow is executing"
+  basic_workflow: 
+    run-on: ubuntu-latest
+    steps:
+      - run: echo "job basic_workflow is executing"

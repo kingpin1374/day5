@@ -5,5 +5,5 @@ on: [push]
 jobs: 
  basic_workflow: 
   run-on: ubuntu-latest
-   steps:
+  steps:
     - run: echo "job basic_workflow is executing"

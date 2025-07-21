@@ -5,8 +5,8 @@ on:
         - main
         - new*
 
-   jobs:
-      main_job:
+   job:
+     main_job:
         if: startswith(github.ref, 'refs/heads/main')
         runs-on: ubuntu-latest
         steps:

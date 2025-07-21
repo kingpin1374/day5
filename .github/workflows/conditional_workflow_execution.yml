@@ -1,10 +1,10 @@
 name: Conditonal workflow execution
 
-on:
-  push:
-    branches:
-       - main
-       - new*
+ on:
+   push:
+     branches:
+        - main
+        - new*
 
    jobs:
       main_job:

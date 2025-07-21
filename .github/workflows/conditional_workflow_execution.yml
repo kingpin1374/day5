@@ -1,6 +1,6 @@
 name: Conditonal workflow execution
 
- on:
+ on: [push]
    push:
      branches:
         - main

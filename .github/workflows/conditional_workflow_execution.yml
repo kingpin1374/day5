@@ -6,13 +6,13 @@ on:
        - main
        - new*
 
-  jobs:
-    main_job:
-      if: startswith(github.ref, 'refs/heads/main')
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "______Job is execution on main branch push__________"
-        - uses: actions/checkout@v4.1.7
-        - uses: actions/setup-node@v3
-           with:
-            - node-version: '14'
+   jobs:
+      main_job:
+        if: startswith(github.ref, 'refs/heads/main')
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "______Job is execution on main branch push__________"
+          - uses: actions/checkout@v4.1.7
+          - uses: actions/setup-node@v3
+            with:
+              node-version: '14'

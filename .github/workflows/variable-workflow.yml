@@ -1,0 +1,13 @@
+name: Variable Demo
+run-name: Testing evn variable
+
+on: [push]
+
+env:
+  owner_name: Aman
+
+jobs:
+  use_env_var:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "job use_env_var is executing as a part of new forkflow - from $owner_name"

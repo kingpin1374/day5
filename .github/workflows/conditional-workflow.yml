@@ -3,13 +3,19 @@ on:
   push:
     branches:
       - main
-      - new*
+  pull_request:
+    branches:
+      - main
+  fork:
+    branches:
+      - main
 
 jobs:
   main_job:
     if: startsWith(github.ref, 'refs/heads/main')
     runs-on: ubuntu-latest
     steps:
+      - run: echo "triggered the main branch workflow"
       - run: echo "______Job is executing on main branch push__________"
       - uses: actions/checkout@v4.1.7
       - uses: actions/setup-node@v3
